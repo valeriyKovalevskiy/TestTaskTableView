@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		78518E4623F4176E00A43658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E4523F4176E00A43658 /* AppDelegate.swift */; };
 		78518E4823F4176E00A43658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E4723F4176E00A43658 /* SceneDelegate.swift */; };
-		78518E4A23F4176E00A43658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E4923F4176E00A43658 /* ViewController.swift */; };
 		78518E4D23F4176E00A43658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78518E4B23F4176E00A43658 /* Main.storyboard */; };
 		78518E4F23F4177100A43658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78518E4E23F4177100A43658 /* Assets.xcassets */; };
 		78518E5223F4177100A43658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78518E5023F4177100A43658 /* LaunchScreen.storyboard */; };
 		78518E5A23F418A000A43658 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 78518E5923F418A000A43658 /* .gitignore */; };
+		78518E5C23F4197F00A43658 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E5B23F4197F00A43658 /* TableViewController.swift */; };
+		78518E6023F41A9500A43658 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E5F23F41A9500A43658 /* TableViewCell.swift */; };
+		78518E6223F41E6E00A43658 /* FullTaskDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E6123F41E6E00A43658 /* FullTaskDescriptionViewController.swift */; };
+		78518E6723F4219D00A43658 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E6623F4219D00A43658 /* Task.swift */; };
+		78518E6923F425C800A43658 /* GetTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78518E6823F425C800A43658 /* GetTasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78518E4223F4176E00A43658 /* TestTaskTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78518E4523F4176E00A43658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78518E4723F4176E00A43658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78518E4923F4176E00A43658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78518E4C23F4176E00A43658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78518E4E23F4177100A43658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78518E5123F4177100A43658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78518E5323F4177100A43658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78518E5923F418A000A43658 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		78518E5B23F4197F00A43658 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		78518E5F23F41A9500A43658 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		78518E6123F41E6E00A43658 /* FullTaskDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTaskDescriptionViewController.swift; sourceTree = "<group>"; };
+		78518E6623F4219D00A43658 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		78518E6823F425C800A43658 /* GetTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +69,41 @@
 			children = (
 				78518E4523F4176E00A43658 /* AppDelegate.swift */,
 				78518E4723F4176E00A43658 /* SceneDelegate.swift */,
-				78518E4923F4176E00A43658 /* ViewController.swift */,
-				78518E4B23F4176E00A43658 /* Main.storyboard */,
-				78518E4E23F4177100A43658 /* Assets.xcassets */,
-				78518E5023F4177100A43658 /* LaunchScreen.storyboard */,
 				78518E5323F4177100A43658 /* Info.plist */,
+				78518E4E23F4177100A43658 /* Assets.xcassets */,
+				78518E6523F4213200A43658 /* Controller */,
+				78518E6423F4212E00A43658 /* View */,
+				78518E6323F4212800A43658 /* Model */,
 			);
 			path = TestTaskTableView;
+			sourceTree = "<group>";
+		};
+		78518E6323F4212800A43658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78518E6623F4219D00A43658 /* Task.swift */,
+				78518E6823F425C800A43658 /* GetTasks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78518E6423F4212E00A43658 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78518E4B23F4176E00A43658 /* Main.storyboard */,
+				78518E5023F4177100A43658 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78518E6523F4213200A43658 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78518E5B23F4197F00A43658 /* TableViewController.swift */,
+				78518E5F23F41A9500A43658 /* TableViewCell.swift */,
+				78518E6123F41E6E00A43658 /* FullTaskDescriptionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78518E4A23F4176E00A43658 /* ViewController.swift in Sources */,
+				78518E6923F425C800A43658 /* GetTasks.swift in Sources */,
 				78518E4623F4176E00A43658 /* AppDelegate.swift in Sources */,
+				78518E6223F41E6E00A43658 /* FullTaskDescriptionViewController.swift in Sources */,
+				78518E6023F41A9500A43658 /* TableViewCell.swift in Sources */,
+				78518E5C23F4197F00A43658 /* TableViewController.swift in Sources */,
+				78518E6723F4219D00A43658 /* Task.swift in Sources */,
 				78518E4823F4176E00A43658 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
