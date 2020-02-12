@@ -90,6 +90,7 @@
 		78518E6423F4212E00A43658 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78518E5F23F41A9500A43658 /* TableViewCell.swift */,
 				78518E4B23F4176E00A43658 /* Main.storyboard */,
 				78518E5023F4177100A43658 /* LaunchScreen.storyboard */,
 			);
@@ -100,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				78518E5B23F4197F00A43658 /* TableViewController.swift */,
-				78518E5F23F41A9500A43658 /* TableViewCell.swift */,
 				78518E6123F41E6E00A43658 /* FullTaskDescriptionViewController.swift */,
 			);
 			path = Controller;

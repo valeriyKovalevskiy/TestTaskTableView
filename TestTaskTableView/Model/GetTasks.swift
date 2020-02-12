@@ -9,18 +9,13 @@
 import Foundation
 
 struct GetTasks {
-    
     private init() {}
     
-    
     static func getTasks(numberOfTasks: Int) -> [Task] {
-
         var tasks = [Task]()
-        
         for number in 1...numberOfTasks {
             tasks.append(Task(title: "task number #\(number)", description: "task #\(number) description"))
         }
         return tasks
     }
-    
 }

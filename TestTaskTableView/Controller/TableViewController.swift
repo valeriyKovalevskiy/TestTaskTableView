@@ -9,34 +9,36 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    //MARK: - Properties
+    let numberOfTasks = 10
     var tasks = [Task]()
     
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tasks = GetTasks.getTasks(numberOfTasks: 5)
+        tasks = GetTasks.getTasks(numberOfTasks: numberOfTasks)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
-    // MARK: - Table view data source
-
+    // MARK: - Methods
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return tasks.count
     }
 
@@ -48,9 +50,9 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 120
-//    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
