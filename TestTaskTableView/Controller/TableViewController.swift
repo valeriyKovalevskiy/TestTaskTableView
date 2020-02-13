@@ -12,13 +12,14 @@ class TableViewController: UITableViewController {
     //MARK: - Properties
     let numberOfTasks = 10
     var tasks = [Task]()
-    
-    
+        
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tasks = GetTasks.getTasks(numberOfTasks: numberOfTasks)
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "cell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,17 +51,11 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            guard let destinationVC = segue.destination as? FullTaskDescriptionViewController else {return}
-            let selectedRow = indexPath.row
-            
-            destinationVC.titleLabelText = tasks[selectedRow].title
-            destinationVC.descriptionText = tasks[selectedRow].description
-        }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "FullTaskDescriptionViewController") as? FullTaskDescriptionViewController
+        let selectedRow = indexPath.row
+        vc?.titleLabelText = tasks[selectedRow].title
+        vc?.descriptionText = tasks[selectedRow].description
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

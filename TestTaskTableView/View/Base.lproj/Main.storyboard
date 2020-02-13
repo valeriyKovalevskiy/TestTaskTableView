@@ -15,47 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="95" id="2F8-cE-H68" customClass="TableViewCell" customModule="TestTaskTableView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="95"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2F8-cE-H68" id="S23-kn-Ybm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1j-k3-ky7">
-                                            <rect key="frame" x="30" y="11" width="354" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="UZf-0a-Rm5"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bn-r8-cZq">
-                                            <rect key="frame" x="30" y="41" width="354" height="43"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="N1j-k3-ky7" secondAttribute="trailing" constant="10" id="CRj-Et-5oL"/>
-                                        <constraint firstItem="8Bn-r8-cZq" firstAttribute="top" secondItem="N1j-k3-ky7" secondAttribute="bottom" constant="10" id="LlT-Od-oTt"/>
-                                        <constraint firstItem="N1j-k3-ky7" firstAttribute="leading" secondItem="S23-kn-Ybm" secondAttribute="leadingMargin" constant="10" id="Vzx-Od-EBq"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="8Bn-r8-cZq" secondAttribute="trailing" constant="10" id="d0d-Ph-SWJ"/>
-                                        <constraint firstItem="N1j-k3-ky7" firstAttribute="top" secondItem="S23-kn-Ybm" secondAttribute="topMargin" id="iwQ-pF-SJY"/>
-                                        <constraint firstItem="8Bn-r8-cZq" firstAttribute="leading" secondItem="S23-kn-Ybm" secondAttribute="leadingMargin" constant="10" id="oCu-ye-okZ"/>
-                                        <constraint firstItem="8Bn-r8-cZq" firstAttribute="bottom" secondItem="S23-kn-Ybm" secondAttribute="bottomMargin" id="v2L-vF-NtR"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="descriptionLabel" destination="8Bn-r8-cZq" id="O84-UO-sV1"/>
-                                    <outlet property="titleLabel" destination="N1j-k3-ky7" id="XrQ-4k-QE8"/>
-                                    <segue destination="baB-Lw-s4J" kind="show" identifier="fullTaskDescription" id="tfi-ez-fYl"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="QXA-b0-vLh" id="Tsd-Xs-khr"/>
                             <outlet property="delegate" destination="QXA-b0-vLh" id="rz4-kf-ejN"/>
@@ -70,19 +29,19 @@
         <!--Full Task Description View Controller-->
         <scene sceneID="YbQ-NG-oHt">
             <objects>
-                <viewController id="baB-Lw-s4J" customClass="FullTaskDescriptionViewController" customModule="TestTaskTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullTaskDescriptionViewController" id="baB-Lw-s4J" customClass="FullTaskDescriptionViewController" customModule="TestTaskTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hI9-vq-BLc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiP-Ic-A2U">
-                                <rect key="frame" x="20" y="108" width="374" height="27.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-QX-hZ0">
-                                <rect key="frame" x="20" y="155.5" width="374" height="706.5"/>
+                                <rect key="frame" x="20" y="111.5" width="374" height="750.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
