@@ -16,6 +16,9 @@ class TableViewCell: UITableViewCell {
     //MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.layer.borderWidth = 3
+        self.layer.borderColor = UIColor(named: "cyanToDarkGray")?.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
